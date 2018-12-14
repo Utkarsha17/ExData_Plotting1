@@ -1,5 +1,5 @@
-##Call Library Table
-library("data.table")
+##Calling Library Table
+library("data.table") 
 
 ##Loading data in Table 
 data <- read.table("household_power_consumption.txt", header = T, sep = ";", na.strings = "?")
