@@ -32,7 +32,7 @@ legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_met
 plot(Global_reactive_power ~ datetime, type = "l")
 
 ##Saving file
-dev.copy(png, file = "plot4.png", height = 480, width = 480)
+dev.copy(png, file = "plot4.png", height = 500, width = 500)
 dev.off()
 detach(Cleandata)
 
