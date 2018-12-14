@@ -14,13 +14,13 @@ Cleandata <- subset(data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02")
 
 ##Drawing Plot 
 attach(Cleandata) #Attaching data source
-plot(Sub_metering_1 ~ datetime, type = "l",ylab = "Energy sub metering", xlab = "")
+plot(Sub_metering_1 ~ datetime, type = "l", xlab = "", ylab = "Energy sub metering")
 lines(Sub_metering_2 ~ datetime, col = "Red")
 lines(Sub_metering_3 ~ datetime, col = "Blue")
 legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 ##Saving file
-dev.copy(png, file = "plot3.png", height = 480, width = 480)
+dev.copy(png, file = "plot3.png", height = 500, width = 500)
 dev.off()
 detach(Cleandata)
 
