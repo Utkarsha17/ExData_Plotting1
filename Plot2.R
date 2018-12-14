@@ -15,9 +15,9 @@ Cleandata <- subset(data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02")
 
 ##Drawing Plot 
 attach(Cleandata) #Attaching data source
-plot(Global_active_power ~ datetime, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
+plot(Global_active_power ~ datetime, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 
 ##Saving file
-dev.copy(png, file = "plot2.png", height = 480, width = 480)
+dev.copy(png, file = "plot2.png", height = 400, width = 400)
 dev.off()
 detach(Cleandata)
